@@ -13,7 +13,7 @@ export class LessonResolver {
   }
 
   @Mutation((returns) => LessonType)
-  async createLesson(
+  createLesson(
     @Args('name') name: string,
     @Args('startDate') startDate: string,
     @Args('endDate') endDate: string,
